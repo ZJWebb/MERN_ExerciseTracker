@@ -1,0 +1,179 @@
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body {
+  color: #FFFFFF;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  background-color: #b9b6a8;
+  margin:0 auto;
+  padding: auto;
+  min-width:400px;
+  max-width:80%;
+  text-align:center;
+}
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+
+/* The navigation bar */
+.navbar {
+
+  background-color:#3d56b1;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  left: 0;
+  height: 8%;
+  width: 100%;
+  text-align: right;
+}
+
+nav {
+  border: 5px;
+  font-size:10px;
+  font-weight:600;
+  margin:10px;
+  padding:10px;
+}
+nav a {
+  background-color: #3d56b1;
+  color:whitesmoke;
+  font-size:20px;
+  font-weight:600;
+  margin: 1%;
+}
+nav a:hover {
+  background-color: whitesmoke;
+  color:#000000;
+  font-size:20px;
+  font-weight:600;
+  padding: 1%;
+}
+
+/*  ----- Page layout blocks -----  */
+header{
+    background-color: #dd2828;
+    color: #000000;
+    border: 2px #000000  ;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 1%;
+    padding: 1%;
+    margin-top: 5%;
+}
+
+footer {
+  background-color: #dd2828;
+  color: #000000;
+  border: 2px #000000  ;
+  font-size: small;
+  font-weight: bold;
+  margin: 1%;
+  padding: 1%;
+}
+
+article{
+  background-color: #dd2828;
+  color: #000000;
+  border: 2px #000000  ;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 1%;
+  padding: 1%;
+}
+
+main {
+  color: #FFFFFF;
+  border: 1%, #000000;
+  font-size: 30px;
+}
+
+h1, h2{
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow:
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+/*  ----- Table ----- */
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+caption {
+  color: white;
+  margin: 10px;
+  font-size: 25px;}
+
+tr {
+  border:2%;
+  padding:2%;
+  background-color: #FFFFFF;
+  text-align: left;
+}
+  tr:nth-child(even) {background-color:#9f9f9f;}
+th {
+  padding-left: 20px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color:#3d56b1;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: bolder;
+  border:solid 3px #222121;
+  text-align: left;
+}
+td {
+  padding:1% 1%;
+  border:solid 3px #555555;
+  font-size: large;
+  text-align: left;
+  width: 2%;
+}
+
+/*  ----- Form ----- */
+form {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  padding: 2%;
+  margin: 2%;
+}
+
+label {
+  display: block;
+  padding: 10px;
+  margin: 10px;
+}
+  button {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3%;
+    margin: 4%;
+    size: 5%;
+    height: 50px;
+    width: 10%;
+  }
+  input {
+    font-family: Arial, Helvetica, sans-serif;
+    size: 1%;
+    height: 50px;
+    width: 50%;
+  }
+  select {
+    font-family: Arial, Helvetica, sans-serif;
+    size: 1%;
+    height: 50px;
+    width: 50%;
+  }
+
+@keyframes App-logo {}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {}
